@@ -1,0 +1,99 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+}
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr 350px;
+    grid-template-areas: 
+    "header header"
+    "nav main"
+    "footer footer";
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    grid-area: header;
+    background-color: aqua;
+}
+.nav{
+    grid-area: nav;
+    background-color: blueviolet;
+    padding: 0 20px;
+}
+.main{
+    grid-area: main;
+    background-color: brown;
+}
+.footer{
+    grid-area: footer;
+    background-color:chartreuse;
+    text-align: center;
+    height: 160px;
+}
+.list-productos{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+}
+.list-productos li{
+    line-height: 49px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+.list-productos li .cantidad{
+    color: grey;
+    margin-left: 10px;
+}
+.container{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 40px;
+    background-color: black;
+    
+}
+.foto{
+    max-width: 500px;
+}
+.descripción h2{
+    font-size: 24px;
+    color: white;
+}
+.descripción p{
+    font-size: 22px;
+    text-align: left;
+    color: white;
+    line-height: 12px;
+}
+button{
+    width: 100%;
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border: 1px;
+}
+.icon i{
+    color: white;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
